@@ -10,4 +10,3 @@ O objetivo deste estudo é prever o estilo do vinho (style) a partir de dados an
 
 📊 Conjunto de Dados:
 O dataset (wine_dataset.csv) contém características físico-químicas de diversas amostras. As variáveis preditoras utilizadas no modelo são:
-AtributoDescriçãofixed_acidityAcidez fixa  volatile_acidityAcidez volátil[cite: 1]citric_acidÁcido cítrico[cite: 1]residual_sugarAçúcar residual[cite: 1]chloridesCloretos[cite: 1]free_sulfur_dioxideDióxido de enxofre livre[cite: 1]total_sulfur_dioxideDióxido de enxofre total[cite: 1]densityDensidade[cite: 1]pHPotencial hidrogeniônico (pH)[cite: 1]sulphatesSulfatos[cite: 1]alcoholTeor alcoólico[cite: 1]qualityNota de qualidade percebida[cite: 1]
