@@ -18,29 +18,32 @@ O dataset (wine_dataset.csv) contém características físico-químicas de diver
 - Scikit-Learn — Divisão em treino/teste (train_test_split) e modelo de classificação (ExtraTreesClassifier)
 
 ⚙️ Passo a Passo do Código
-1. Carregamento dos Dados
+- 1. Carregamento dos Dados:
 Python
 import pandas as pd
-
 arquivo = pd.read_csv(r'vinho_machine_learning/wine_dataset.csv')
-2. Tratamento da Variável Categórica
-Transformação da coluna style em valores numéricos (0 para vermelho/tinto e 1 para branco)[cite: 1]:
+
+- 2. Tratamento da Variável Categórica:
+Transformação da coluna style em valores numéricos (0 para vermelho/tinto e 1 para branco):
 
 Python
 arquivo['style'] = arquivo['style'].replace('red', 0)
 arquivo['style'] = arquivo['style'].replace('white', 1)
-3. Divisão entre Variáveis Preditoras e Alvo
+
+- 3. Divisão entre Variáveis Preditoras e Alvo:
 Python
 y = arquivo['style'].astype(int)
 x = arquivo.drop('style', axis=1)
-4. Separação em Conjuntos de Treino e Teste
-Uso de 70% dos dados para treinamento e 30% para avaliação do modelo[cite: 1]:
+
+- 4. Separação em Conjuntos de Treino e Teste:
+Uso de 70% dos dados para treinamento e 30% para avaliação do modelo:
 
 Python
 from sklearn.model_selection import train_test_split
 
 x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3)
-5. Treinamento do Modelo e Acurácia
+
+- 5. Treinamento do Modelo e Acurácia:
 Python
 from sklearn.ensemble import ExtraTreesClassifier
 
@@ -51,8 +54,9 @@ modelo.fit(x_treino, y_treino)
 # Avaliação do desempenho
 resultado = modelo.score(x_teste, y_teste)
 print("Acurácia:", resultado)  # Resultado: ~0.9969 (99.69%)
-🧪 Teste de Predição Prática
-Para validar o funcionamento, realizou-se uma predição em amostras específicas do conjunto de teste (x_teste[400:403])[cite: 1]:
+
+🧪 Teste de Predição Prática:
+- Para validar o funcionamento, realizou-se uma predição em amostras específicas do conjunto de teste (x_teste[400:403]):
 
 Python
 previsoes = modelo.predict(x_teste[400:403])
@@ -65,14 +69,3 @@ Comparando com as classes reais (y_teste[400:403]):
 Índice 4299: 1 (Vinho Branco)[cite: 1]
 
 Índice 1021: 0 (Vinho Tinto)[cite: 1]
-
-🚀 Como Executar o Projeto
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Instale as dependências necessárias:
-
-Bash
-pip install pandas scikit-learn
-Garanta que o arquivo wine_dataset.csv está no caminho correto e execute o notebook ou script
