@@ -6,12 +6,12 @@ Este repositório contém um estudo prático de Machine Learning para a **classi
 
 ## 📌 Visão Geral do Projeto
 
-O objetivo deste projeto é prever o estilo do vinho (`style`) a partir de dados físico-químicos das amostras [cite: 1]. 
+O objetivo deste projeto é prever o estilo do vinho (`style`) a partir de dados físico-químicos das amostras. 
 
-* **Tipo de Aprendizado:** Supervisionado (Classificação Binária) [cite: 1]
-* **Target (Variável Alvo):** `style` (Mapeado como `0` para Tinto / *Red* e `1` para Branco / *White*) [cite: 1]
-* **Algoritmo Utilizado:** `ExtraTreesClassifier` (Scikit-Learn) [cite: 1]
-* **Acurácia Alcançada:** **~99.69%** no conjunto de teste [cite: 1]
+* **Tipo de Aprendizado:** Supervisionado (Classificação Binária)
+* **Target (Variável Alvo):** `style` (Mapeado como `0` para Tinto / *Red* e `1` para Branco / *White*)
+* **Algoritmo Utilizado:** `ExtraTreesClassifier` (Scikit-Learn)
+* **Acurácia Alcançada:** **~99.69%** no conjunto de teste
 
 ---
 
@@ -21,26 +21,26 @@ O dataset utilizado (`wine_dataset.csv`) contém características físico-quími
 
 | Atributo | Descrição |
 | :--- | :--- |
-| `fixed_acidity` | Acidez fixa [cite: 1] |
-| `volatile_acidity` | Acidez volátil [cite: 1] |
-| `citric_acid` | Ácido cítrico [cite: 1] |
-| `residual_sugar` | Açúcar residual [cite: 1] |
-| `chlorides` | Cloretos [cite: 1] |
-| `free_sulfur_dioxide` | Dióxido de enxofre livre [cite: 1] |
-| `total_sulfur_dioxide` | Dióxido de enxofre total [cite: 1] |
-| `density` | Densidade [cite: 1] |
-| `pH` | Potencial hidrogeniônico (pH) [cite: 1] |
-| `sulphates` | Sulfatos [cite: 1] |
-| `alcohol` | Teor alcoólico [cite: 1] |
-| `quality` | Nota de qualidade do vinho [cite: 1] |
+| `fixed_acidity` | Acidez fixa |
+| `volatile_acidity` | Acidez volátil |
+| `citric_acid` | Ácido cítrico |
+| `residual_sugar` | Açúcar residual |
+| `chlorides` | Cloretos |
+| `free_sulfur_dioxide` | Dióxido de enxofre livre |
+| `total_sulfur_dioxide` | Dióxido de enxofre total |
+| `density` | Densidade |
+| `pH` | Potencial hidrogeniônico (pH) |
+| `sulphates` | Sulfatos |
+| `alcohol` | Teor alcoólico |
+| `quality` | Nota de qualidade do vinho |
 
 ---
 
 ## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
-* **Python 3.x**
-* **Pandas** — Manipulação e tratamento de dados [cite: 1]
-* **Scikit-Learn** — Divisão de dados (`train_test_split`) e modelo de Machine Learning (`ExtraTreesClassifier`) [cite: 1]
+* **Python 3.14**
+* **Pandas** — Manipulação e tratamento de dados
+* **Scikit-Learn** — Divisão de dados (`train_test_split`) e modelo de Machine Learning (`ExtraTreesClassifier`)
 
 ---
 
@@ -121,5 +121,5 @@ Valores reais esperados (`y_teste[400:403]`):
 ---
 
 ## 📜 Licença
-
-Este projeto está licenciado sob a Licença **MIT** - consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+GitHub: gustayath
+Linkedin: Gustavo Yath
