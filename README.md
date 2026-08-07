@@ -10,3 +10,4 @@ O objetivo deste estudo é prever o estilo do vinho (style) a partir de dados an
 
 📊 Conjunto de Dados:
 O dataset (wine_dataset.csv) contém características físico-químicas de diversas amostras. As variáveis preditoras utilizadas no modelo são:
+![image_alt](https://github.com/gustayath/vinho_machine_learning/blob/5cf1a3858a176b8cbf4c536bd0cde91bb5501076/Captura%20de%20tela%202026-08-07%20161944.png)
