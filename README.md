@@ -120,6 +120,13 @@ Valores reais esperados (`y_teste[400:403]`):
 
 ---
 
-## 📜 Licença
-- GitHub: gustayath
-- Linkedin: Gustavo Yath
+---
+
+## 👨‍💻 Autor
+
+**Gustavo Yath**
+
+- GitHub: https://github.com/gustayath
+- LinkedIn: https://www.linkedin.com/in/gustavoyath/
+
+---
